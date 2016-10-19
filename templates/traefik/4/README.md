@@ -15,6 +15,7 @@
   - false: Enable http enpoints and disable https ones.
   - true: Enable http and https endpoints.
   - only: Enable https endpoints and redirect http to https.
+- etcd_enable = false  # Enable to add etcd storage support
 - acme_enable = false 				# Enable/Disable acme traefik support.
 - acme_email = "test@traefik.io" 	# acme user email
 - acme_ondemand = true 				# acme ondemand parameter.
