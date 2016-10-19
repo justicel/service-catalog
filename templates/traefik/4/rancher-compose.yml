@@ -32,15 +32,12 @@
       default: 8000 
       type: "int"
     - variable: "etcd_support"
-      label: "Add etcd support for traefik."
+      label: "Etcd enable:"
       description: |
         To enable etcd support you will need a cluster named etcd-ha with service named etcd.
       default: false
       required: true
-      type: enum
-      options:
-        - false
-        - true
+      type: "boolean"
     - variable: "https_enable"
       label: "Enable HTTPS:"
       description: |
