@@ -38,6 +38,13 @@
       default: false
       required: true
       type: "boolean"
+    - variable: "consul_server"
+      label: "Consul server:"
+      description: |
+        Add consul server if one is being used.
+      required: true
+      default: "consul"
+      type: "string"
     - variable: "https_enable"
       label: "Enable HTTPS:"
       description: |

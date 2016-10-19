@@ -22,8 +22,7 @@ traefik:
   - TRAEFIK_ACME_EMAIL=${acme_email}
   - TRAEFIK_ACME_ONDEMAND=${acme_ondemand}
   - TRAEFIK_CONSUL_ENABLE=${consul_support}
-  external_links:
-    - consul/consul:consul
+  - TRAEFIK_CONSUL_SERVER=${consul_server}
   volumes:
     - traefik_acme_vol:/opt/traefik/acme
   volume_driver: convoy-efs
