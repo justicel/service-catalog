@@ -22,7 +22,7 @@ traefik:
   - TRAEFIK_ACME_EMAIL=${acme_email}
   - TRAEFIK_ACME_ONDEMAND=${acme_ondemand}
   volumes:
-    - traefik_$${stack_name}:/opt/traefik/acme
+    - traefik_acme_vol:/opt/traefik/acme
   volume_driver: convoy-efs
   volumes_from:
   - traefik-conf
