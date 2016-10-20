@@ -4,7 +4,7 @@
   description: "Blog tool, publishing platform and CMS"
   uuid: Wordpress-0
   minimum_rancher_version: v0.51.0
-  upgrade_from: <=0.1
+  upgrade_from: <=1.0.0
   questions:    
     - variable: public_port
       description: "public port to access the wordpress site"
