@@ -4,9 +4,9 @@ wordpress:
     - db:mysql
   ports:
     - ${public_port}:80
-  - volumes:
+  volumes:
     - ${wp_stack_name}_wp_vol:/var/www/html/wp-content
-  - volume_driver: convoy-efs
+  volume_driver: convoy-efs
 
 db:
   image: mariadb
