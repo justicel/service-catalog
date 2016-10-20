@@ -1,0 +1,29 @@
+.catalog:
+  name: "Wordpress"
+  version: "0.1"
+  description: "Blog tool, publishing platform and CMS"
+  uuid: Wordpress-0
+  minimum_rancher_version: v0.51.0
+  upgrade_from: <=0.1
+  questions:    
+    - variable: public_port
+      description: "public port to access the wordpress site"
+      label: "Public Port"
+      required: true
+      default: "80"
+      type: "int"
+    - variable: multi_container
+      description: "How many instances to launch by default"
+      label: "Container count"
+      required: true
+      default: "1"
+      type: "int"
+    - variable: wp_stack_name
+      description: "Volume namespace to use when building the stack"
+      label: "Stack name"
+      required: true
+      type: "string"
+
+
+wordpress:
+  scale: ${multi_container}

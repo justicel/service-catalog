@@ -1,0 +1,14 @@
+wordpress:
+  image: wordpress
+  links:
+    - db:mysql
+  ports:
+    - ${public_port}:80
+  - volumes:
+    - ${wp_stack_name}_wp_vol:/var/www/html/wp-content
+  - volume_driver: convoy-efs
+
+db:
+  image: mariadb
+  environment:
+    MYSQL_ROOT_PASSWORD: example
