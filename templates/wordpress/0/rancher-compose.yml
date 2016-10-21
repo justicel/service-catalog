@@ -20,6 +20,7 @@
       type: "int"
     - variable: wp_stack_name
       description: "Volume namespace to use when building the stack"
+      default: ${stack_name}
       label: "Stack name"
       required: true
       type: "string"
