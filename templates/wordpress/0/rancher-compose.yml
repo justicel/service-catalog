@@ -30,6 +30,7 @@
       type: "string"
     - variable: lb_port
       description: "Port number of external load-balancer"
+      label: "LB Port"
       required: true
       type: "int"
       default: "80"
