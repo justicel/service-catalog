@@ -24,7 +24,7 @@
       required: true
       type: "string"
     - variable: domain_names
-      description: "A comma separated list of WP domains (ex: example.com,www.example.com with no space)
+      description: "A comma separated list of WP domains (ex: example.com,www.example.com with no space)"
       label: "Domain names"
       required: true
       type: "string"
