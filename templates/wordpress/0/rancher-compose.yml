@@ -20,11 +20,14 @@
       type: "int"
     - variable: wp_stack_name
       description: "Volume namespace to use when building the stack"
-      default: ${stack_name}
       label: "Stack name"
       required: true
       type: "string"
-
+    - variable: domain_names
+      description: "A comma separated list of WP domains (ex: example.com,www.example.com with no space)
+      label: "Domain names"
+      required: true
+      type: "string"
 
 wordpress:
   scale: ${multi_container}

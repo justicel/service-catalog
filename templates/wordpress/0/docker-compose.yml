@@ -9,6 +9,10 @@ wordpress:
   volume_driver: convoy-efs
   labels:
     io.rancher.container.pull_image: always
+    rancher.lb.sync.register: true
+    rancher.lb.sync.ext_port: 80
+    rancher.lb.sync.service_port: 80
+    rancher.lb.sync.full_name: ${domain_names}
   tty: true
   stdin_open: true
 
