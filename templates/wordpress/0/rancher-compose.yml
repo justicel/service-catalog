@@ -28,6 +28,11 @@
       label: "Domain names"
       required: true
       type: "string"
+    - variable: lb_port
+      description: "Port number of external load-balancer"
+      required: true
+      type: "int"
+      default: "80"
 
 wordpress:
   scale: ${multi_container}
